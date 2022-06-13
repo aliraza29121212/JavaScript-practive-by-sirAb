@@ -1,95 +1,58 @@
-// let ABC = () => {
-//   try {
-//     let SelectObject = document.querySelector("h1").innerHTML;
-//     alert(SelectObject);
-//   } catch (error) {
-//     alert(error.message);
-//   }
+// const MilkShake = (Value1, Value2) => {
+//   console.log(Value1);
+//   console.log(Value2);
+// };
+// MilkShake("Banana", "Milk");
+
+// const ProcessData = (userDetails) => {
+//   let Name = "My Name is " + userDetails.Name;
+//   let Age = "My Age is " + userDetails.Age;
+//   let IdNumber = "My Idnumber is " + userDetails.IdNumber;
+//   let FatherName = "My Father Name is " + userDetails.FatherName;
+//   console.log(Name, "\n", Age, "\n", IdNumber, "\n", FatherName);
 // };
 
-// let Clicked = () => {
-//   try {
-//     let SelectedObject = document.querySelector("h1").innerHTML;
-
-//     alert(SelectedObject);
-//   } catch (error) {
-//     alert(error.message);
-//   }
+// let userDetails = {
+//   Name: "Husssain",
+//   Age: 20,
+//   IdNumber: 1234546,
+//   FatherName: "Ali",
 // };
 
-// let ABC = () => {
-//   try {
-//     document.querySelector("h1").innerHTML = "Value Change ho gai ha";
-//   } catch (error) {
-//     alert(error.message);
-//   }
-// };
+// ProcessData(userDetails);
 
-// let Clicked = () => {
+const ProcessData = (ClientInfo) => {
+  let Name = "My Name is " + ClientInfo.Name;
+  let Age = "My age is " + ClientInfo.Age;
+  let IdNumber = "My Id Number is " + ClientInfo.IdNumber;
+  let FatherName = "My Father Name is " + ClientInfo.FatherName;
+  console.log(Name, "\n", Age, "\n", IdNumber, "\n", FatherName);
+};
+// let VisibleText = () => {
 //   try {
-//     document.querySelector("h1").innerHTML = "HEyy THere";
-//   } catch (error) {
-//     alert(error.message);
-//   }
-// };
-
-// let ABC = () => {
-//   try {
-//     let SelectedObject = document.querySelector("h1");
-//     SelectedObject.innerHTML = "hey";
-//     SelectedObject.style.color = "red";
-//   } catch (error) {
-//     alert(error.message);
-//   }
-// };
-// let Clicked = () => {
-//   try {
-//     let SelectedObject = document.querySelector("h1");
-//     SelectedObject.innerHTML = "Hii World";
-//     SelectedObject.style.color = "red";
-//   } catch (error) {
-//     alert(error.message);
-//   }
-// };
-
-// let ChangeImage = () => {
-//   try {
-//     let SelectedObject = document.querySelector(".FirstImage");
-//     SelectedObject.src = "img/002.png";
-//   } catch (error) {
-//     error.message;
-//   }
-// };
-
-// let ChangeImage = () => {
-//   try {
-//     let SelectedObject = document.querySelector(".FirstImage");
-//     SelectedObject.src = "img/002.png";
-//   } catch (error) {
-//     error.message;
-//   }
-// };
-
-// let visibleText = () => {
-//   try {
-//     let selectedObject = document.querySelector(".visibleText");
+//     let SelectedObject = document.querySelector(".InsideDiv");
 //     let Element = document.createElement("h1");
-//     let InnerHtml = document.createTextNode("Ali Raza Here");
+//     let InnerHtml = document.createTextNode(ProcessData(Name));
 //     Element.appendChild(InnerHtml);
-//     selectedObject.appendChild(Element);
+//     SelectedObject.appendChild(Element);
 //   } catch (error) {
 //     error.message;
 //   }
 // };
 
-let visibleText = () => {
-  try {
-    let SelectedObject = document.querySelector(".InsideDiv");
-    let Element = document.createElement("h1");
-    let InnerHtml = document.createTextNode("This is Ali Raza from own Brand");
-    Element.appendChild(InnerHtml);
-    SelectedObject.appendChild(Element);
-  } catch (error) {
-    error.message;
+let ClientInfo = {
+  Name: "Hamza",
+  Age: 20,
+  IdNumber: 12345456,
+  FatherName: "Ejaz",
+};
+ProcessData(ClientInfo);
+
+const Table = (TableNumber) => {
+  for (let start = 1; start <= 10; start++) {
+    let Result = 0;
+    Result = TableNumber * start;
+    console.log(Result);
   }
 };
+Table(8);

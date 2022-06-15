@@ -67,8 +67,23 @@ let LetsCalculate = () => {
     let Value1 = $(".value1").value;
     let Value2 = $(".value2").value;
     let Operator = $(".value3").value;
+    let ShowResult = $(".ShowResult");
+    let Result;
 
-    console.log(Value1, Value2, Operator);
+    //Agar Operator + to Add kro
+    if (Operator === "+") {
+      Result = parseInt(Value1) + parseInt(Value2);
+    }
+    if (Operator === "-") {
+      Result = parseInt(Value1) - parseInt(Value2);
+    }
+    if (Operator === "/") {
+      Result = parseFloat(Value1) / parseFloat(Value2);
+    }
+    if (Operator === "*") {
+      Result = parseInt(Value1) * parseInt(Value2);
+    }
+    ShowResult.innerHTML = Result;
   } catch (error) {
     console.log(error.message);
   }

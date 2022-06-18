@@ -8,18 +8,25 @@
 //   }
 // };
 
-let Quantity = 10;
-document.querySelector("span").innerHTML = `Quantity ${Quantity}`;
+const { TemplatePage } = require("./TemplatePage");
+
+let Quantity = 1;
+let Result = 0;
 
 const GetValue = () => {
   try {
-    let Value = document.querySelector(".value");
-    console.log(Value);
-    console.log(Value.dataset.value);
-    console.log(Value.dataset.type);
-    console.log(Value.dataset.points);
-    console.log(Value.dataset.important);
+    let Value = parseInt(document.querySelector(".value").dataset.value);
+    // Result =Result+Value
+
+    Result += Value;
+    console.log(Result);
+
+    document.querySelector("span").innerHTML = `Quantity ${Quantity}`;
+    document.querySelector(".Result").innerHTML = TemplatePage;
+    Quantity++;
   } catch (error) {
     console.log(error.message);
   }
 };
+
+document.querySelector("span").innerHTML = `Quantity ${Quantity}`;

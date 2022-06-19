@@ -48,11 +48,25 @@ let ClientInfo = {
 };
 ProcessData(ClientInfo);
 
+// const Table = (TableNumber) => {
+//   for (let start = 1; start <= 10; start++) {
+//     let Result = 0;
+//     Result = TableNumber * start;
+//     console.log(Result);
+//   }
+// };
+// Table(8);
+
 const Table = (TableNumber) => {
-  for (let start = 1; start <= 10; start++) {
-    let Result = 0;
-    Result = TableNumber * start;
-    console.log(Result);
+  try {
+    for (let num = 1; num <= 10; num++) {
+      let Result = 0;
+      Result = TableNumber * num;
+      console.log(Result);
+    }
+  } catch (error) {
+    console.log(error.message);
   }
 };
+
 Table(8);

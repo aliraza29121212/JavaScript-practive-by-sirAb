@@ -82,14 +82,26 @@
 //   }
 // };
 
-let visibleText = () => {
+// let visibleText = () => {
+//   try {
+//     let SelectedObject = document.querySelector(".InsideDiv");
+//     let Element = document.createElement("h1");
+//     let InnerHtml = document.createTextNode("This is Ali Raza from own Brand");
+//     Element.appendChild(InnerHtml);
+//     SelectedObject.appendChild(Element);
+//   } catch (error) {
+//     error.message;
+//   }
+// };
+
+let VisisbleText = () => {
   try {
     let SelectedObject = document.querySelector(".InsideDiv");
     let Element = document.createElement("h1");
-    let InnerHtml = document.createTextNode("This is Ali Raza from own Brand");
+    let InnerHtml = document.createTextNode("Helooo World");
     Element.appendChild(InnerHtml);
     SelectedObject.appendChild(Element);
   } catch (error) {
-    error.message;
+    console.log(error.message);
   }
 };
